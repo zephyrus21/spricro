@@ -13,7 +13,7 @@ public class OrderController {
   private final OrderService orderService;
 
   @PostMapping
-  @ResponseStatus(code = HttpStatus.CREATED)
+  @ResponseStatus(HttpStatus.CREATED)
   public String createOrder(@RequestBody OrderRequest orderRequest) {
     orderService.placeOrder(orderRequest);
     return "Order placed successfully";
