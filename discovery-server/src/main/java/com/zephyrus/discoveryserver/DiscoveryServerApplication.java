@@ -1,4 +1,4 @@
-package com.zephyrus.productservice;
+package com.zephyrus.discoveryserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
 @EnableEurekaServer
-public class ProductServiceApplication {
+public class DiscoveryServerApplication {
   public static void main(String[] args) {
-    SpringApplication.run(ProductServiceApplication.class, args);
+    SpringApplication.run(DiscoveryServerApplication.class, args);
   }
 }
